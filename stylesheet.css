@@ -1289,7 +1289,7 @@ audio {
         font-weight: 700;
         color: #fff;
         background-color: #466baf;
-		font-size: 20px;
+		font-size: 30px;
 		margin-bottom: 10px;
 }
 .btn-danger {
@@ -1300,7 +1300,7 @@ audio {
 	font-weight: 700;
 	color: #fff;
 	background-color: #c30f0f;
-	font-size: 20px;
+	font-size: 30px;
 	margin-bottom: 10px;
 }
     .btn-primary:hover,
