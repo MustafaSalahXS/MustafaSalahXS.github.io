@@ -1,145 +1,183 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
 <head>
-	<title>Happy Birthday Esraa</title>
-	<meta charset="UTF-8" />
-	<meta name="description" content="Happy Birthday">
-	<meta name="robots" content="index, follow" />
-	<link rel="author" href="http://www.github.com/sachin0987" /> 
-    <meta name="keywords" content="Birthday, Happy">
-    <meta property="og:type" content="E-Greeting" />
-    <meta property="og:image" content="favicon.ico" />
-    <meta property="og:description" content="Wish you a very Happy Birthday">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="loading.css">
-	<link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet/less" href="cake.less">
-	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.1.0/less.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دعوة زفاف | فرحة العمر</title>
+    <!-- Google Fonts for Arabic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<div class="loading"></div>
-	<audio class="song" controls loop>
-        <source src="Tone.mp3"></source>
-	   Your browser isn't invited for super fun audio time.
+
+    <!-- Intro Overlay -->
+    <div id="welcome-overlay" class="overlay flex-center">
+        <div class="envelope-container flex-center flex-column text-center">
+            <h1 class="welcome-title text-gold fade-up">نتشرف بدعوتكم لحضور حفل زفافنا</h1>
+            <p class="welcome-subtitle fade-up delay-1">لتكتمل الفرحة بحضوركم. دعونا نعيش الأجواء معاً (ارفع الصوت).</p>
+            <button id="open-btn" class="glass-btn pulse fade-up delay-2 mt-4">افتح الدعوة</button>
+        </div>
+    </div>
+
+    <!-- Audios -->
+    <!-- Zaffa / Joyous Track user provided -->
+    <audio id="bg-music" loop>
+        <source src="audio/1.mp3" type="audio/mpeg">
     </audio>
-    <div class="balloons text-center" id="b1">
-    	<h2 style="color:#F2B300;">E</h2>
-    </div>
-    <div class="balloons text-center" id="b2">
-    	<h2 style="color:#0719D4;">S</h2>
-    </div>
-	<div class="balloons text-center" id="b3">
-    	<h2 style="color:#D14D39;">R</h2>
-    </div>
-	<div class="balloons text-center" id="b4">
-    	<h2 style="color:#8FAD00;">A</h2>
-    </div>
-	<div class="balloons text-center" id="b5">
-    	<h2 style="color:#8377E4;">A</h2>
-    </div>
-	<div class="balloons text-center" id="b6">
-    	<h2 style="color:#0719D4;">❤️</h2>
-    </div>
-    <img src="Balloon-Border.png" width="100%" class="balloon-border">
- 
+    <audio id="firework-audio" preload="auto">
+        <source src="https://actions.google.com/sounds/v1/weapons/fireworks_roman_candle.ogg" type="audio/ogg">
+    </audio>
 
-	<div class="container">
-		
-		<div class="row">
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_yellow"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_red"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_blue"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_green"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_pink"></div>
-			</div>
-			<div class="col-md-2 col-xs-2 bulb-holder">
-				<div class="bulb" id="bulb_orange"></div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-12 text-center">
-				<img src="banner.png" class="bannar">
-			</div>
-		</div>
-		<div class="row cake-cover">
-			<div class="col-md-12 texr-center">
-				<div class="cake">
-				  <div class="velas">
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				    <div class="fuego"></div>
-				  </div>
-				  <div class="cobertura"></div>
-				  <div class="bizcocho"></div>
-				</div>
-			</div>
-		</div>
-		<div class="row message">
-			<div class="col-md-12">
-				<p>Today is... النهارده ...</p>
-				<p>احلي واجمل يوم يوم يوم ميلاد القمر الي محلي الدنيا كلها بوجوده ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️ </p>
-				<p>I'd like to wish you one more time</p>
-				<p>بحبك ينور عيني ❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</p>
-				<p>a very happy birthday My Lil Angel ==> Esraa ❤️ </p>
-				
-			</div>
-		</div>
-		<div class="navbar navbar-fixed-bottom">
-			<div class="row">
-				<div class="col-md-6 text-center col-md-offset-3">
-					<button class="btn btn-info" id="turn_on">❤️🫀 ولعي النور يقمري</button>
-					<button class="btn btn-info" id="play">👀يلا نشغل اغاني لاحلي عيد ميلاد لاحلي بنوته ف  الدنيا</button>
-					<button class="btn btn-info" id="bannar_coming"> 💖 ننزل بالزينه بقي يجميل</button>
-					<button class="btn btn-info" id="balloons_flying">💖نطير البلالين يقمر</button>
-					<button class="btn btn-info" id="cake_fadein">❤️ احلي كيكه لاحلي عيون</button>
-					<button class="btn btn-info" id="light_candle">💖👀 نولع الشمع للقمر...وانفخي ف الشمعه كدا</button>
-					<button class="btn btn-danger" id="wish_message">👀كل سنه وانتي جنبي ومعايا ينور عيني❤️ دوسي هنا كدا</button>
-					<button class="btn btn-info" id="story">❤️ حاجه صغيره ليكي كدا</button>
-					<!-- <button class="btn btn-primary" id="cake_cut">Lrt's Cut the Cake</button> -->
-				</div>
-			</div>
-			<!-- <div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-2">
-			</div> -->
-		</div>
+    <main id="main-content" class="hidden">
 
+        <!-- Hero Section -->
+        <section class="hero flex-center flex-column">
+            <div class="hero-bg pan-img"></div>
+            <div class="hero-overlay"></div>
 
-	</div>
+            <div class="hero-glass flex-column flex-center text-center">
+                <p class="pre-title fade-up">بسم الله الرحمن الرحيم</p>
+
+                <!-- Aesthetic Image behind/above names -->
+                <div class="hero-couple-img-container fade-up delay-1">
+                    <img src="img/1.jpg" alt="العرسان" class="hero-couple-img">
+                </div>
+
+                <h1 class="main-title text-gold fade-up delay-2">أحمد <br>&<br> ياسمين</h1>
+
+                <!-- Aesthetic word under names -->
+                <p class="aesthetic-word text-gold fade-up delay-3">حب لا ينتهي، وبداية لقصة عمر</p>
+
+                <p class="date fade-up delay-3">يوم الخميس، ١٥ ديسمبر ٢٠٢٦</p>
+            </div>
+
+            <div class="scroll-indicator fade-up delay-3">
+                <p>ننزل لتحت علشان القصة تبتدي</p>
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+            </div>
+        </section>
+
+        <!-- The Story Section -->
+        <section class="story-section">
+            <div class="container text-center">
+                <p class="story-text reveal delay-1">القصة كلها بدأت بنظرة صدفة ورضا رب العالمين...</p>
+                <p class="story-text reveal delay-1">لحظة حسّت قلوبنا فيها بأمان الدنيا كله.</p>
+                <p class="story-text reveal delay-1">واتفقنا نكمّل المشوار ونبني حياة أحلى مع بعض.</p>
+                <p class="story-text text-gold reveal delay-1">والنهاردة.. فرحتنا مش هتكمل غير بيكم وسطينا.</p>
+            </div>
+        </section>
+
+        <!-- Cinematic Video Section -->
+        <section class="video-section">
+            <div class="video-container reveal">
+                <!-- Autoplay, Loop, Muted Cinematic Video -->
+                <video class="cinematic-video" autoplay loop muted playsinline>
+                    <source
+                        src="https://assets.mixkit.co/videos/preview/mixkit-a-couple-holding-hands-during-a-wedding-ceremony-43152-large.mp4"
+                        type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <!-- Swiper Carousel Section -->
+        <section class="gallery">
+            <div class="text-center reveal container">
+                <h2 class="section-title text-gold">أحلى لحظاتنا</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper reveal delay-1" dir="rtl">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/1.jpg" alt="سعادة العرسان"></div>
+                    <div class="swiper-slide"><img src="img/2.jpg" alt="تجهيزات القاعة"></div>
+                    <div class="swiper-slide"><img src="img/3.jpg" alt="رومانسية"></div>
+                    <div class="swiper-slide"><img src="img/4.jpg" alt="التفاصيل الصغيرة"></div>
+                    <div class="swiper-slide"><img src="img/5.jpg" alt="لحظات العمر"></div>
+                    <div class="swiper-slide"><img src="img/6.jpg" alt="أجمل الذكريات"></div>
+                    <div class="swiper-slide"><img src="img/7.jpg" alt="لقطة رائعة"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <!-- Masonry Grid Gallery -->
+        <section class="static-gallery container">
+            <div class="text-center reveal">
+                <h2 class="section-title text-gold">عقبال عندكم جميعاً</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="masonry-grid reveal delay-1">
+                <div class="masonry-item"><img src="img/2.jpg" alt="زفاف فلورال"></div>
+                <div class="masonry-item"><img src="img/3.jpg" alt="ديكور مذهل"></div>
+                <div class="masonry-item"><img src="img/4.jpg" alt="الخواتم الذهبية"></div>
+                <div class="masonry-item"><img src="img/5.jpg" alt="إضاءة رومانسية"></div>
+                <div class="masonry-item"><img src="img/8.jpg" alt="ذكرى جميلة"></div>
+                <div class="masonry-item"><img src="img/9.jpg" alt="حب"></div>
+            </div>
+        </section>
+
+        <!-- Location Section (New for Egyptian Market) -->
+        <section class="location-section container">
+            <div class="text-center reveal">
+                <h2 class="section-title text-gold">مكاننا وقاعتنا</h2>
+                <div class="divider"></div>
+                <p class="desc rtl-text mb-4">
+                    بانتظاركم بكل حب في قاعة "رويال بالاس"، فندق جراند النيل بلازا، القاهرة. الزفة هتبدأ الساعة ٩ مساءً
+                    إن شاء الله.
+                </p>
+            </div>
+
+            <!-- Map Container -->
+            <div class="map-container reveal delay-1 mt-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13813.4116965158!2d31.233333!3d30.05!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840ece46487e5%3A0x6fb281a7fc52e697!2sDowntown%20Cairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1703080000000!5m2!1sen!2seg"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <!-- Google Maps Button -->
+            <div class="text-center reveal delay-2 mt-4 map-btn-wrapper">
+                <a href="https://maps.google.com?q=30.05,31.233333" target="_blank"
+                    class="glass-btn pulse inline-block map-btn">افتح اللوكيشن على خرائط جوجل</a>
+            </div>
+        </section>
+
+        <!-- Auto Surprise Section (Cake) -->
+        <section class="surprise-section flex-center flex-column" id="auto-surprise">
+            <div class="surprise-content text-center">
+                <h2 class="section-title text-gold reveal">الاحتفال الكبير</h2>
+                <p class="desc reveal delay-1">يومنا مكنش هيكمل ولا هيحلو من غيركم.</p>
+
+                <div class="cake-container reveal delay-2">
+                    <img src="./img/Cake.webp" alt="تورتة العرسان بالشماريخ" class="cake-img pan-img">
+
+                    <!-- Flares and Balloons injected by JS -->
+                    <div id="animation-layer"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <p>&copy; تصميم MustafaSalah TradeMark ™® 2026. عقبال عندكم جميعاً ❤️.</p>
+        </footer>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-<script src="effect.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-58229732-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </html>
